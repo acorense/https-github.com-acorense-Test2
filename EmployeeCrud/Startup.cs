@@ -28,6 +28,7 @@ namespace EmployeeCrud
         public void ConfigureServices(IServiceCollection services)
         {
             //services.AddDbContext()
+
             services.AddTransient<IEmployee, EmployeeRository>();
             services.AddControllersWithViews();
         }
